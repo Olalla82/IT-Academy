@@ -1,0 +1,38 @@
+
+USE pizerria_m7;
+
+SELECT * FROM pizerria_m7.clientes;
+
+INSERT INTO `pizerria_m7`.`clientes` (`nombre`, `apellido`, `direccion`, `codigo_postal`, `telefono`) 
+	VALUES ('Maria', 'Delgado', 'Valencia', '78900', '656746378');
+INSERT INTO `pizerria_m7`.`clientes` (`nombre`, `apellido`, `direccion`, `codigo_postal`, `telefono`) 
+	VALUES ('Nuria', 'Martinez', 'Barcelona', '08017', '658987412');
+INSERT INTO `pizerria_m7`.`clientes` (`nombre`, `apellido`, `direccion`, `codigo_postal`, `telefono`) 
+	VALUES ('Pedro', 'Garcia', 'Barcelona', '08011', '645986323');
+INSERT INTO `pizerria_m7`.`clientes` (`nombre`, `apellido`, `direccion`, `codigo_postal`, `telefono`) 
+	VALUES ('Marcos', 'Gutierrez', 'Sevilla', '64536', '657891203');
+INSERT INTO `pizerria_m7`.`clientes` (`nombre`, `apellido`, `direccion`, `codigo_postal`, `telefono`) 
+	VALUES ('Benito', 'Lorente', 'Sevilla', '60239', '658321456');
+	
+SELECT * FROM pizerria_m7.bebidas;
+
+INSERT INTO `pizerria_m7`.`bebidas` (`nombre`, `descripcion`, `precio`) 
+	VALUES ('cocacola', 'bebida referscante con burbujas sabor a cola', '2');
+INSERT INTO `pizerria_m7`.`bebidas` (`nombre`, `descripcion`, `precio`) 
+	VALUES ('cerveza', 'vaso mediano', '3');
+INSERT INTO `pizerria_m7`.`bebidas` (`nombre`, `descripcion`, `precio`) 
+	VALUES ('cafe', 'cortado c remoso', '1');
+
+SELECT * FROM pizerria_m7.hamburguesas;
+
+INSERT INTO `pizerria_m7`.`hamburguesas` (`nombre`, `descripcion`, `precio`) 
+	VALUES ('hamburguesa especial', 'Hamburguesa doble de queso huevo cebolla caramelizada y rocafort', '10');
+	
+SELECT * FROM pizerria_m7.localidad;
+
+INSERT INTO `pizerria_m7`.`localidad` (`nombre_localidad`) 
+	VALUES ('Barcelona');
+INSERT INTO `pizerria_m7`.`localidad` (`id_localidad`, `nombre_localidad`) 
+	VALUES ('Sevilla');
+INSERT INTO `pizerria_m7`.`localidad` (`nombre_localidad`) 
+VALUES ('Valencia');

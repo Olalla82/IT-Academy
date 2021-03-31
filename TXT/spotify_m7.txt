@@ -1,0 +1,26 @@
+SELECT * FROM spotify.usuarios_free;
+
+INSERT INTO `spotify`.`usuarios_free` (`email`, `password`, `nombre_usuario_free`, `fecha_nacimiento`, `sexo`, `pais_usuarios_free`, `codigo_postal`) 
+	VALUES ('porrasp@gmail.com', '5342fdget', 'pakitaporras', '1972-05-12', 'F', 'España', '08911');
+	
+SELECT * FROM spotify.artista;
+
+INSERT INTO `spotify`.`artista` (`nombre_artista`) 
+	VALUES ('Bruce Springsteen');
+INSERT INTO `spotify`.`artista` (`nombre_artista`) 
+	VALUES ('Alejandro Sanz');
+INSERT INTO `spotify`.`artista` (`nombre_artista`) 
+	VALUES ('Spice Girls');
+INSERT INTO `spotify`.`artista` (`nombre_artista`) 
+	VALUES ('Kille Minogue');
+	
+SELECT * FROM spotify.canciones;
+
+INSERT INTO `spotify`.`canciones` (`titulo_canciones`, `duracion_canciones`, `numero_reproducciones`) 
+	VALUES ('tougher than the rest', '03:50:26', '523');
+INSERT INTO `spotify`.`canciones` (`titulo_canciones`, `duracion_canciones`, `numero_reproducciones`) 
+	VALUES ('amiga ', '02:59:45', '253');
+INSERT INTO `spotify`.`canciones` (`titulo_canciones`, `duracion_canciones`, `numero_reproducciones`) 
+	VALUES ('viva forever', '03:25:41', '642');
+INSERT INTO `spotify`.`canciones` (`titulo_canciones`, `duracion_canciones`, `numero_reproducciones`) 
+	VALUES ('spinning arround', '04:26:32', '12586');

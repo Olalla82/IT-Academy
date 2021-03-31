@@ -1,0 +1,23 @@
+SELECT * FROM `cul d'ampolla`.clientes;
+
+INSERT INTO `cul d'ampolla`.`clientes` (`nombre`, `direccion`, `telefono`, `email`, `fecha_regitro`) 
+	VALUES ('Maria ', 'Benitez', '654893256', 'benitezm@gmail.com', '2018-05-15');
+INSERT INTO `cul d'ampolla`.`clientes` (`nombre`, `direccion`, `telefono`, `email`, `fecha_regitro`) 
+	VALUES ('Josefa ', 'Perez', '659854520', 'josefaper@hotmail.com', '2019-03-12');
+INSERT INTO `cul d'ampolla`.`clientes` (`nombre`, `direccion`, `telefono`, `email`, `fecha_regitro`) 
+	VALUES ('Olvido', 'Marin', '745326589', 'marinolvido@gmail.com', '2019-02-11');
+	
+SELECT * FROM `cul d'ampolla`.gafas;
+
+INSERT INTO `cul d'ampolla`.`gafas` (`marca`, `graduacion_cristales`, `tipo_montura`, `color_montura`, `color_cristal`, `precio`) 
+	VALUES ('Rayban', 'no', 'pasta', 'negra', 'negra', '160');
+INSERT INTO `cul d'ampolla`.`gafas` (`marca`, `graduacion_cristales`, `tipo_montura`, `color_montura`, `color_cristal`, `precio`) 
+	VALUES ('Carrera', 'no', 'metal', 'metalica', 'negra', '110');
+
+SELECT * FROM `cul d'ampolla`.proveedores;
+
+INSERT INTO `cul d'ampolla`.`proveedores` (`nombre`, `direccion`, `telefono`, `fax`, `dni`) 
+	VALUES ('kimervision', 'aranjuez', '915632563', 'no', '48536982S');
+INSERT INTO `cul d'ampolla`.`proveedores` (`nombre`, `direccion`, `telefono`, `fax`, `dni`) 
+	VALUES ('gafascomfe', 'Jerez', '954562356', 'no ', '65493258a');
+

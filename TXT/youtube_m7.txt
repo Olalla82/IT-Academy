@@ -1,0 +1,34 @@
+SELECT * FROM youtube.usuarios;
+
+INSERT INTO `youtube`.`usuarios` (`email`, `password`, `nombre_usuario`, `fecha_nacimiento`, `sexo`, `país`, `codigo_postal`) 
+	VALUES ('cliniset@gmail.com', 'oei456_46', 'carloli', '1985-12-05', 'M', 'Chile', '25469');
+INSERT INTO `youtube`.`usuarios` (`email`, `password`, `nombre_usuario`, `fecha_nacimiento`, `sexo`, `país`, `codigo_postal`) 
+	VALUES ('marimar25@gmail.com', 'choysemua', 'Marsalada25', '1989-06-19', 'F', 'Argentina', '59874');
+INSERT INTO `youtube`.`usuarios` (`email`, `password`, `nombre_usuario`, `fecha_nacimiento`, `sexo`, `país`, `codigo_postal`) 
+	VALUES ('ericbovien@gmail.com', '32_boberic', 'Boby32', '1991-02-15', 'M', 'Francia', '24638');
+INSERT INTO `youtube`.`usuarios` (`email`, `password`, `nombre_usuario`, `fecha_nacimiento`, `sexo`, `país`, `codigo_postal`) 
+	VALUES ('davidroc@gmail.com', 'davidof76', 'Davidof', '1976-11-25', 'M', 'España', '08015');
+	
+SELECT * FROM youtube.videos;
+
+INSERT INTO `youtube`.`videos` (`titulo`, `descripcion`, `numero_reproducciones`, `num_likes`, `num_dislikes`) 
+	VALUES ('caiman', 'se va por los rios y manglares de amazonas', '152445444', '54632', '1254');
+INSERT INTO `youtube`.`videos` (`titulo`, `descripcion`, `numero_reproducciones`, `num_likes`, `num_dislikes`) 
+	VALUES ('bares', 'bares que lugares', '12565646', '54651', '1255');
+
+
+SELECT * FROM youtube.playlist;
+	
+INSERT INTO `youtube`.`playlist` (`nombre_playlist`, `fecha_creacion`) 
+	VALUES ('pakitaporras', '2015-12-26 12:25:32');
+INSERT INTO `youtube`.`playlist` (`nombre_playlist`, `fecha_creacion`) 
+	VALUES ('salsatope', '2020-01-06 01:16:14');
+INSERT INTO `youtube`.`playlist` (`nombre_playlist`, `fecha_creacion`) 
+	VALUES ('hardkore', '1982-08-29 09:45:41');
+INSERT INTO `youtube`.`playlist` (`nombre_playlist`, `fecha_creacion`) 
+	VALUES ('lomasecuchado', '2001-09-14 10:05:53');
+
+
+
+
+	
