@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "5523bef9-03ab-4199-9f67-91f305cec38f",
+		"name": "PHP_M9nivel2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "_token",
+						"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						""
+					]
+				},
+				"description": "GET|HEAD '/' Closure"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/token?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"token"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/barcelona?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/barcelona?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"barcelona"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/pais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/pais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"pais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/pais?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/pais?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"pais"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z"
+						}
+					]
+				},
+				"description": "metodo Put Paises $pais"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/pais?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/pais?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"pais"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z"
+						}
+					]
+				},
+				"description": "Metodo Delete Paises $pais"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"pais",
+						"departamentos"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"pais",
+						"departamentos"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos/depart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos/depart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"pais",
+						"departamentos",
+						"depart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos/depart?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos/depart?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"pais",
+						"departamentos",
+						"depart"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos/depart?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_Spring9_n2/public/paises/pais/departamentos/depart?_token=WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_Spring9_n2",
+						"public",
+						"paises",
+						"pais",
+						"departamentos",
+						"depart"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "WPnhuYPQaSy6NU5b1DV7i5E3BsE0EMasdVHi5w7z"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
