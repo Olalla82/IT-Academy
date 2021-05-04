@@ -11,7 +11,7 @@
 </head>
 <body class="bg-info">
     <div class="container"><br><br>
-        <form action="{{route('crud.create')}} " method="post">
+        <form action="{{route('crud.create')}} " method="get">
             
             @csrf
 

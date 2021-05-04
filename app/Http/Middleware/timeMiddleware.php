@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use App\Http\Middleware\Carbon\Carbon;
+use Carbon\Carbon;
 
 class timeMiddleware
 {
@@ -20,7 +20,11 @@ class timeMiddleware
         //return $next($request);
         //return redirect('/');
         //return redirect('time');
-        echo now()->add(2, 'hour');
+        $currentDateTime = Carbon::now();
+        $newDateTime = Carbon::now()->addHours(2);
+
+        echo $newDateTime;
+        return $next($request);
        
     }
 }

@@ -24,26 +24,26 @@ Route::get('/', homeController::class);
 
 Route::get('token', [authController::class, 'token'])->name('token');
 
-Route::post('login', authController::class);
+Route::post('login', authController::class, 'login');
 
 
 Route::post('logout', function(){
     return "Logout Usuari";
 });
 
-Route::get('token', [catalogController::class, 'token'])->name('token');
-
-Route::get('catalog', [catalogController::class, 'index']);
-
-Route::get('catalog/show/{id}', [catalogController::class, 'show']);
-
-Route::post('catalog/create', [catalogController::class, 'create']);
-
-Route::put('catalog/edit/{id}', [catalogController::class, 'edit']);
 
 
+Route::get('catalogo', function(){
+    dd ('holaaaaa');
+});
 
-Route::get('token', [crudController::class, 'token'])->name('token');
+Route::get('catalogo/show/{id}', [catalogController::class, 'show']);
+
+Route::post('catalogo/create', [catalogController::class, 'create']);
+
+Route::put('catalogo/edit/{id}', [catalogController::class, 'edit']);
+
+
 
 Route::get('crud', [crudController::class, 'index']);
 
@@ -51,12 +51,12 @@ Route::post('crud/create', [crudController::class, 'create'])->name('crud.create
 
 
 
-Route::get('token', [timeController::class, 'token'])->name('token');
+
 
 Route::get('time', timeController::class);
 
 
-Route::get('token', [sesionController::class, 'token'])->name('token');
+
 
 Route::get('sesion/', [sesionController::class, 'index']);
 
@@ -76,8 +76,8 @@ Route::get('test', function(){
 })->middleware('time');
 
 
-Route::get('error', function(){
+/*Route::get('error', function(){
     return response('ESTO ES UN ERROR', 404);
-});
+});*/
 
   

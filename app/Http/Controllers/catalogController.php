@@ -12,6 +12,7 @@ class catalogController extends Controller
     }
     public function index()
     {
+        dd ('holaaaa');
         return view('catalog.index');
     }
     public function show($id)

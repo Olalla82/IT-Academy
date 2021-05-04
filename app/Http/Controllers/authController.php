@@ -10,7 +10,7 @@ class authController extends Controller
     {
         return csrf_token();
     }
-    public function __invoke(){
+    public function login(){
         return view('auth.login');
     }
 }
