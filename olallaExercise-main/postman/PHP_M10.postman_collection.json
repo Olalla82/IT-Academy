@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "3cdadc52-3094-4872-beb1-34554101ee46",
+		"name": "PHP_M10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PHP_M10/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "olalla",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{domain}}/PHP_M10/public",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"PHP_M10",
+						"public"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PHP_M10/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/PHP_M10/public/login?_token=tbxyU0cqG8WiwvAmWzHIKdpgmOIvBRzfgv7IJELt",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"PHP_M10",
+						"public",
+						"login"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "tbxyU0cqG8WiwvAmWzHIKdpgmOIvBRzfgv7IJELt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PHP_M10/logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/PHP_M10/public/logout?_token=tbxyU0cqG8WiwvAmWzHIKdpgmOIvBRzfgv7IJELt",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"PHP_M10",
+						"public",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "tbxyU0cqG8WiwvAmWzHIKdpgmOIvBRzfgv7IJELt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PHP_M10/catalog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/PHP_M10/public/catalog",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"PHP_M10",
+						"public",
+						"catalog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PHP_M10/catalog/show/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/PHP_M10/public/catalog/show/4",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"PHP_M10",
+						"public",
+						"catalog",
+						"show",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PHP_M10/catalog/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/PHP_M10/public/catalog/create?_token=tbxyU0cqG8WiwvAmWzHIKdpgmOIvBRzfgv7IJELt",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"PHP_M10",
+						"public",
+						"catalog",
+						"create"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "tbxyU0cqG8WiwvAmWzHIKdpgmOIvBRzfgv7IJELt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PHP_M10/catalog/edit/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/PHP_M10/public/catalog/edit/5?_token=tbxyU0cqG8WiwvAmWzHIKdpgmOIvBRzfgv7IJELt",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"PHP_M10",
+						"public",
+						"catalog",
+						"edit",
+						"5"
+					],
+					"query": [
+						{
+							"key": "_token",
+							"value": "tbxyU0cqG8WiwvAmWzHIKdpgmOIvBRzfgv7IJELt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/PHP_M10/public/token",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"PHP_M10",
+						"public",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
