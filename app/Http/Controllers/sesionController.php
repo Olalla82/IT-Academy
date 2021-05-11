@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\empleadosController;
+use App\Models\User;
+use App\Models\Empleado;
+
 
 
 class sesionController extends Controller
@@ -15,12 +18,13 @@ class sesionController extends Controller
     }
     public function store(Request $request)
     {   
+        $empleados = Empleado::all();
         $request->flash();
         $request->validate([
             'email' => 'required',
             'password' => 'required'
         ]);
-        return response(view('sesion.home'))->cookie('cookie1', 'valor', 60);
+        return response(view('empleados.index', compact('empleados')))->cookie('cookie1', $request->email, 60);
       
     }
     public function registro()

@@ -13,7 +13,7 @@
 <body class="bg-secondary">
 
     <nav class="navbar navbar-dark bg-secondary ">
-        <span class="bg-secondary text-light  m-auto"><p>NOMBRE DE USUARIO:<p>{{$usuario->email}}</span></div>
+        <span class="bg-secondary text-light  m-auto"><p>NOMBRE DE USUARIO:<p>{{Cookie::get('cookie1')}}</span></div>
     </nav>
     <hr class="bg-light">
 
