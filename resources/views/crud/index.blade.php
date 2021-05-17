@@ -42,7 +42,13 @@
                       <td>{{$equipo->estadio}}</td>
                       <td>{{$equipo->calificacion}}</td>
                       <td>{{$equipo->goles}}</td>
-                      <td><a class="text-light" href="{{route('delete.post')}}">Eliminar</a></td>
+                      <td>
+                        <form action="{{route('delete.post')}}" method="post">
+                        @csrf
+                        @method('delete')
+                          <button class="btn btn_light text-danger" type="submit">Eliminar</button>
+                        </form>
+                      </td>
                   </tr>
              @endforeach
                 </tbody>
@@ -67,7 +73,13 @@
                     <td>{{$partido->equipo_local}}</td>
                     <td>{{$partido->equipo_visitante}}</td>
                     <td>{{$partido->fecha}}</td>
-                    <td><a class="text-light" href="{{route('delete.post')}}">Eliminar</a></td>
+                    <td> 
+                      <form action="{{route('delete.post')}}" method="post">
+                      @csrf
+                      @method('delete')
+                        <button class="btn btn_light text-danger" type="submit">Eliminar</button>
+                      </form>
+                    </td>
                   </tr>
               @endforeach  
                 </tbody>

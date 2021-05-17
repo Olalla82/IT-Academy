@@ -31,9 +31,9 @@ Route::get ('update', [CrudController::class, 'update'])->name ('crud.update');
 
 Route::put ('update', [CrudController::class, 'restore'])->name('crud.restore');
 
-Route::get ('delete', [CrudController::class, 'delete']);
+Route::delete ('delete', [CrudController::class, 'delete'])->name('delete.post');
 
-Route::delete ('delete', [CrudController::class, 'delete_post'])->name('delete.post');//delete
+
 
 //ERROR 404
 Route::get('error', function(){

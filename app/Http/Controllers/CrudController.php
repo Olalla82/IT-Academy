@@ -17,6 +17,16 @@ class CrudController extends Controller
         return view('crud.create');
     }
     public function store(Request $request){
+
+        $partido = new Partido();
+        $partido->estadio = $request->estadio;
+        $partido->equipo_local = $request->equipo_local;
+        $partido->equipo_visitante = $request->equipo_visitante;
+        $partido->fecha = $request->fecha;
+        $partido->save();
+
+        return redirect()->route('crud.index', $partido);
+
         $request->flash();
 
         $request->validate([
@@ -33,6 +43,7 @@ class CrudController extends Controller
         return view('crud.update');
     }
     public function restore(Request $request){
+
         $request->flash();
         
         $request->validate([
@@ -45,10 +56,9 @@ class CrudController extends Controller
 
         return view('crud.update');
     }
-    public function delete(){
+    public function delete(Partido $partido){
+        $partido->delete();
         return view('crud.delete'); 
     }
-    public function delete_post(){
-        return view('crud.delete'); 
-    }
+  
 }
