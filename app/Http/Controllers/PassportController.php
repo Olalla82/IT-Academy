@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
 
 class PassportController extends Controller
 {
@@ -27,20 +28,20 @@ class PassportController extends Controller
             'password' => $request->password
         ];
 
-       /* $token = auth()->user()->createToken('Personal Acces Token')->accessToken;
-            return view('home', compact('token'));*/
+      
 
         if(Auth::attempt($data)){
- dd(':D');
-            $token = Auth::user()->createToken('Personal Access Token')->accessToken;
-            dd($token);   
-            return redirect()->route('home');
+            $token = Auth::user()->createToken('Personal Access Token')->accessToken;  
+            //return redirect()->route('home', ['token' => $token]);
+            //return view('home',  ['token' => $token]);
+            return redirect()->action(
+                [HomeController::class, 'show' ], ['token' => $token]);
+
             //return response()->json(['token' => $token], 200);
         } else {
-            dd(':C');
             return response()->json(['error' => 'Unauthorized'], 401);
         }
-                //dd(':D');
+               
     }
 
     public function register_index(){
@@ -73,7 +74,7 @@ class PassportController extends Controller
     public function logout(Request $request){
         
         $token = Auth::user()->token();
-         $token->revoke();
+        $token->revoke();
          return response()->json([
              'message' => 'Successfully logged out'
          ]);

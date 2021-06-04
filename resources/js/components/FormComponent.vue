@@ -1,22 +1,22 @@
 <template>
     <form v-on:submit.prevent="newCuadro()">
         <div class="form-group">
-            <label for="nombre">Nombre</label>
+            <label for="nombre" class="text-light font-weight-bold" style="text-shadow: 3px 3px 10px black;">NOMBRE</label>
             <input type="text" class="form-control" id="nombre" v-model="cuadro.nombre">
         </div>
         <div class="form-group">
-            <label for="precio">Precio</label>
+            <label for="precio"  class="text-light font-weight-bold" style="text-shadow: 3px 3px 10px black;">PRECIO</label>
             <input type="text" class="form-control" id="precio" v-model="cuadro.precio">
         </div>
         <div class="form-group">
-            <label for="autor">Autor</label>
+            <label for="autor" class="text-light font-weight-bold" style="text-shadow: 3px 3px 10px black;">AUTOR</label>
             <input type="text" class="form-control" id="autor" v-model="cuadro.autor">
         </div>
         <div class="form-group">
-            <label for="fecha_entrada">Fecha Entrada Producto</label>
+            <label for="fecha_entrada" class="text-light font-weight-bold" style="text-shadow: 3px 3px 10px black;">FECHA ENTRADA PRODUCTO</label>
             <input type="date" class="form-control" id="fecha_entrada" v-model="cuadro.fecha_entrada">
         </div>
-        <button type="submit" class="btn btn-primary">AÑADIR PRODUCTO</button>
+        <button type="submit" class="btn btn-light font-weight-bold">AÑADIR PRODUCTO</button>
     </form>
 </template>
 

@@ -8,11 +8,12 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-size:contain; background-image:url('https://a.travel-assets.com/findyours-php/viewfinder/images/res40/182000/182177.jpg');">
+
     <div id="app">
-        
-        <shop-component></shop-component>
-           
+
+            <shop-component></shop-component>
+   
     </div>
   
     <script src="{{ mix('js/app.js') }}"></script>

@@ -8,23 +8,22 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-image:url('https://s1.1zoom.me/b5050/408/Pictorial_art_Ships_439913_1366x768.jpg'); background-size:cover;">
     <div class=container>
         <form class="form-signin" action="{{route('login.usuario')}}" method="post">
 
         @csrf
-        
-            <h1 class="h3 mb-3 mt-3 font-weight-normal">Login</h1>
+            <div class="d-flex justify-content-center"><h1 class="h3 mb-3 mt-3 font-weight-normal display-3 text-light">LOGIN</h1></div>
             <label for="inputEmail" class="sr-only">Correo Electrónico</label><br>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electrónico" required="" autofocus=""><br>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electrónico" required="" autofocus="" name="email"><br>
             <label for="inputPassword" class="sr-only">Contraseña</label><br>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required=""><br>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="" name="password"><br>
             <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="rrecuerdame"> Recuérdame
+            <label class="text-light">
+                <input type="checkbox" value="rrecuerdame" > Recuérdame
             </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Acceso</button>
+            <button class="btn btn-lg btn-block text-light" type="submit" style="background:#398a84;">Acceso</button>
          
         </form>
     </div>
