@@ -46,7 +46,6 @@ Route::post('login', [AuthController::class, 'log'])->name('auth.log');
         Route::put('players/{player}', [PlayerController::class, 'update'])->name('player.update');
 
 
-
         Route::get('game', [GameController::class, 'index'])->name('games.index');
 
         Route::delete('players/{id}/games', [GameController::class, 'destroy'])->name('games.destroy');

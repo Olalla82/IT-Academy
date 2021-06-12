@@ -45,15 +45,21 @@
 
         <div class="d-flex justify-content-between">
             <div class="justify-content-center m-4">
-                <button class="btn btn-light" style="border: 3px solid red; border-radius: 15px;">
-                    <a class="nav-link active text-danger font-weight-bold" href="{{--{{route('player.edit'), $player}}--}}" style="font-size: 14px;">
-                        MODIFICAR JUGADOR
-                    </a>
-                </button>  
+                <form action="{{route('player.update', $player)}}" method="post">
+                    @csrf
+                    @method('put')
+                    <label for="" class="text-danger font-weight-bold" style="text-shadow: 3px 3px 15px black; font-size:20px;">NOMBRE DEL JUGADOR</label><br>
+                    <input type="text" name="nombre"><br><br>
+                    <button class="btn btn-light text-danger font-weight-bold" style="border: 3px solid red; border-radius: 15px;font-size: 14px;">
+                            MODIFICAR JUGADOR
+                    </button>  
+                </form>
             </div>
             <div class="justify-content-center m-4">
                 <button class="btn btn-light" style="border: 3px solid red; border-radius: 15px;">
-                    <a class="nav-link active text-danger font-weight-bold" href="{{route('player.index')}}" style="font-size: 14px;">RANKING</a>
+                    <a class="nav-link active text-danger font-weight-bold" href="{{route('player.index')}}" style="font-size: 14px;">
+                        RANKING
+                    </a>
                 </button>  
             </div>
         </div>

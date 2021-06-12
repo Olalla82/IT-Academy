@@ -40,7 +40,7 @@ class PlayerController extends Controller
         return view('juego', compact('player'));
     }
 
-   /* public function edit(Player $player){
+   public function edit(Player $player){
             
             return view('edit', compact('player'));
     }
@@ -54,6 +54,6 @@ class PlayerController extends Controller
         $player->update($request->all());
 
         return redirect()->route('player.show', $player);
-    }*/
+    }
    
 } 
