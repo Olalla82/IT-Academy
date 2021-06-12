@@ -28,7 +28,7 @@
                
                 @foreach($games as $game) 
                 <tr>
-                    <td style="font-size: 22px;">{{$game->player->nombre}}</td> 
+                    <td style="font-size: 22px;">{{$game->player->nombre}}</td>                    
                     <td style="font-size: 22px;">{{$game->dado1}}</td>
                     <td style="font-size: 22px;">{{$game->dado2}}</td>
                     <td style="font-size: 22px;">
@@ -39,15 +39,16 @@
                         echo $resultado;
                     @endphp
                     </td>
-                    <td style="font-size: 22px;"><a href="#">Editar</a></td>
-                    <td style="font-size: 22px;"><a href="">Eliminar</a></td>
+                </tr>
                 </tr>
                 @endforeach
                
             </tbody>      
         </table>
         <div class="row justify-content-end mt-4">
-            <button class="btn btn-light p-3" style="border: 6px solid red; border-radius: 15px;"><a class="nav-link active text-danger font-weight-bold" href="{{route('player.index')}}" style="font-size: 30px;">VOLVER</a></button>   
+            <button class="btn btn-light p-3" style="border: 6px solid red; border-radius: 15px;">
+                <a class="nav-link active text-danger font-weight-bold" href="{{route('home.index')}}" style="font-size: 30px;">VOLVER</a>
+            </button>   
         </div>
 
     </div>

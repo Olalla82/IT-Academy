@@ -12,13 +12,8 @@
 <body style="background-image:url('https://images-na.ssl-images-amazon.com/images/I/91BZBH6qkcL._AC_SL1500_.jpg'); background-size: cover;">
         
     <div class="container">
-       <div class="row justify-content-center">
-            <div><h2 class="text-danger display-4 font-weight-bold"  style="text-shadow: 3px 3px 15px black;">JUGADOR</h2></div><br>  
-        </div>
-        <div class="row justify-content-center">
-            <div><span class="text-light" style="font-size: 50px">{{$player->nombre}}</span></div>
-        </div>
-        <div class="row d-flex justify-content-around">
+       
+        <div class="row mt-4 d-flex justify-content-around">
             <div>
                 <div><h2 class="text-danger display-4 font-weight-bold" style="text-shadow: 3px 3px 15px black;">DADO 1</h2></div><br>
                 <div><span class="text-light" style="font-size: 50px">
@@ -65,7 +60,7 @@
             </div>
             <div class="justify-content-center m-4">
                 <button class="btn btn-light p-3" style="border: 6px solid red; border-radius: 15px;">
-                    <a class="nav-link active text-danger font-weight-bold" href="{{route('games.show')}}" style="font-size: 30px;">RANKING</a>
+                    <a class="nav-link active text-danger font-weight-bold" href="{{route('player.index')}}" style="font-size: 30px;">RANKING</a>
                 </button>  
             </div>
         </div>

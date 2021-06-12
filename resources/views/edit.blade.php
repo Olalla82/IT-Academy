@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             
-            <form class="" action="{{route('player.update'), $player}}" method="post">
+            <form class="" action="{{--{{route('player.update'), $player}}--}}" method="post">
         @csrf
         @method('put')
                 <div class="row justify-content-center">
@@ -21,11 +21,13 @@
                 </div>
                 <br><br>
                 <div class="row justify-content-center m-5">   
-                    <input class="col-8 p-3" style="border-radius: 10px;"type="text" name="nombre" value="{{$player->nombre}}">
+                    <input class="col-8 p-3" style="border-radius: 10px;"type="text" name="nombre" value="{{old('nombre', $player->nombre)}}">
                 </div>
                 <br><br>
                 <div class="row justify-content-center m-5">
-                    <button type="submit"class="btn btn-light p-3 font-weight-bold"style="color: red; font-size: 30px; border: 6px solid red; border-radius: 15px;">MODIFICAR NOMBRE DEL JUGADOR</button>
+                    <button type="submit" class="btn btn-light p-3 font-weight-bold"style="color: red; font-size: 30px; border: 6px solid red; border-radius: 15px;">
+                        MODIFICAR NOMBRE DEL JUGADOR
+                    </button>
                 </div>
             </form>
         </div>

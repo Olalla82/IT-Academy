@@ -7,9 +7,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class GameController extends Controller
-{
-   public function index(Request $request, Player $player){
+{   
+  
 
+  public function index(Request $request, Player $player){
     
         $dado1 = rand(1, 6);
         $dado2 = rand(1, 6);
@@ -32,17 +33,17 @@ class GameController extends Controller
     
     }
 
-    
-    public function show(Player $player, Game $game){
-        $player = Player::all();
-        $games = Game::all();
-        return view('show', compact( 'games', 'player'));
+    public function destroy(Player $player, Game $game){
+        $game->delete();
+        //$player->delete();
+
+        return redirect()->route('player.index');
     }
 
-   public function destroy(Player $player, Game $game){
-        $game->delete();
-    
-    }
+
+
+   
+
 
   
 }
