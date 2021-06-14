@@ -40,7 +40,7 @@
                     @endphp
                     </td>
                     <td style="font-size: 22px;">
-                        <form action="{{route('games.destroy', $game)}}" method="post">
+                        <form action="{{route('player.destroy', $game)}}" method="post">
                             @csrf
                             @method('delete')
                             <button type="submit">Eliminar</button>

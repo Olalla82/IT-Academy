@@ -45,10 +45,12 @@ Route::post('login', [AuthController::class, 'log'])->name('auth.log');
 
         Route::put('players/{player}', [PlayerController::class, 'update'])->name('player.update');
 
+        Route::delete('players/{player}/games', [PlayerController::class, 'destroy'])->name('player.destroy');
+
 
         Route::get('game', [GameController::class, 'index'])->name('games.index');
 
-        Route::delete('players/{id}/games', [GameController::class, 'destroy'])->name('games.destroy');
+       
 
         
 Route::post('logout', [AuthController::class, 'logut'])->name('auth.logout');

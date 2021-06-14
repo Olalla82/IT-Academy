@@ -55,5 +55,12 @@ class PlayerController extends Controller
 
         return redirect()->route('player.show', $player);
     }
+
+    public function destroy(Player $player, Game $game){
+        $game->delete();
+        $player->delete();
+
+        return redirect()->route('player.index');
+    }
    
 } 

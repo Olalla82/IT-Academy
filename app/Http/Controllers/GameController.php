@@ -22,6 +22,7 @@ class GameController extends Controller
             $resultado = false;
         }
         
+        //$player = Player::where('id', 'desc');
         $player = Player::find('1');
         $game = Game::create(['dado1' => $dado1,
                             'dado2' => $dado2,
@@ -32,18 +33,7 @@ class GameController extends Controller
        return view('partida', compact(['game', 'resultado', 'sumatoria', 'player']));
     
     }
-
-    public function destroy(Player $player, Game $game){
-        $game->delete();
-        //$player->delete();
-
-        return redirect()->route('player.index');
-    }
-
-
-
-   
-
+    
 
   
 }
