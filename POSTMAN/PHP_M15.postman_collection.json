@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "bf26e6a9-70e5-4d5b-9858-8809c161a987",
+		"name": "PHP_M15",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/players/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}",
+						"password": "{{token}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/players/create"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/players",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}",
+						"password": "{{token}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/players"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}",
+						"password": "{{token}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}",
+						"password": "{{token}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/players/{player}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}",
+						"password": "{{token}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/players/{{player}}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"players",
+						"{{player}}"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYyMzc2Nzk5OSwiZXhwIjoxNjIzNzcxNTk5LCJuYmYiOjE2MjM3Njc5OTksImp0aSI6IkZwUE1RT3FLa3lnN0d3NXMiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cZJEpJjoPVwzj2P_NlQM_HhIkQDAWOa6350LOk4cJ40",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/players/{player}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}",
+						"password": "{{token}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/players/{{player}}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/players/{player}/games ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}",
+						"password": "{{token}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/players/{{player}}/games/ "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/players/{player}/edit ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}",
+						"password": "{{token}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/players/{{player}}/edit/"
+			},
+			"response": []
+		}
+	]
+}
