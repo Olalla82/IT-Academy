@@ -19,7 +19,7 @@
         <div class="text-dark bg-danger"><h3 class="display-5">Tienda: {{tienda.nombre}}</h3></div><br>
         <div class="text-dark bg-danger"><h3 class="display-5">Nº de Cuadros: {{tienda.numero_cuadros}}</h3></div>
 
-        <bbdd-component v-for="(tienda,index) in tiendas" 
+        <bbdd-component v-for="(tienda) in tiendas" 
                         :tienda="tienda"
                         :key="tienda.id">  
         </bbdd-component>

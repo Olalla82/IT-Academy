@@ -31,7 +31,13 @@
         },
         data(){
             return{
-               
+                cuadro: {
+                    id: '1',
+                    nombre: 'Product 1',
+                    imagen: 'https://via.placeholder.com/640x480.png/007722?text=quas',
+                    precio: 150
+                   
+                }
             }
         },
         methods: {
