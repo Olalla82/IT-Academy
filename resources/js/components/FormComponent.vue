@@ -40,15 +40,16 @@ export default {
     },
     methods: {
         newCuadro(){
-            axios.defaults.headers.common = {
+            this.$emit('add', this.cuadro);
+           // alert(this.cuadro.nombre, ':D');
+             axios.defaults.headers.common = {
                 Authorization: "Bearer " + localStorage.getItem("token"),
-            };
+            }; 
            axios.post('/api/cuadros', this.cuadro).then((response) => {
                this.$emit('add', response.data.cuadro);
-               // this.cuadros = response.data.cuadros
             });
             
-            this.cuadro = Object.assign({}, defaultCuadro)
+            this.cuadro = Object.assign({}, defaultCuadro) 
         }
     }
 }

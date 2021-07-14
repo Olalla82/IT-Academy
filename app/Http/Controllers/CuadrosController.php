@@ -14,7 +14,7 @@ class CuadrosController extends Controller
     }
     public function store(Request $request){
         $cuadro = Cuadro::create($request->all());
-        return response()->json(compact('cuadro'));
+        return response()->json_decode(compact('cuadro'));
 
     }
     public function delete(Cuadro $cuadro){

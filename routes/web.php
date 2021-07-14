@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PassportController;
 use App\Http\Controllers\TiendaController;
+use App\Http\Controllers\CuadrosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,5 @@ Route::get('cuadros', [HomeController::class, 'index'])->name('home');
 Route::get('/', [HomeController::class, 'show'])->name('cuadros');
 
 Route::get('tiendas', [HomeController::class, 'create'])->name('tiendas');
+
 

@@ -24,7 +24,7 @@ use App\Http\Controllers\TiendasController;
     Route::get('login', [PassportController::class, 'login_index'])->name('login.show');
     Route::post('login', [PassportController::class, 'login'])->name('login.usuario');
 
-Route::middleware('auth:api')->group(function(){
+//Route::middleware('auth:api')->group(function(){
     
   
     Route::post('logout', [PassportController::class, 'logout']);
@@ -43,7 +43,7 @@ Route::middleware('auth:api')->group(function(){
 
    
    
-});
+//});
 
 
 
